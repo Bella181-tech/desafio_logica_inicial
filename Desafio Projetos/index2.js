@@ -2,17 +2,17 @@ function classificarPartidas(vitorias, derrotas) {
 	const saldoVitorias = vitorias - derrotas;
 	let nivel;
 
-	if (vitorias <= 10) {
+	if (vitorias <= 10 && derrotas <= vitorias) {
 		nivel = "Ferro";
-	} else if (vitorias <= 20) {
+	} else if (vitorias <= 20 && derrotas <= vitorias) {
 		nivel = "Bronze";
-	} else if (vitorias <= 50) {
+	} else if (vitorias <= 50 && derrotas <= vitorias) {
 		nivel = "Prata";
-	} else if (vitorias <= 80) {
+	} else if (vitorias <= 80 && derrotas <= vitorias) {
 		nivel = "Ouro";
-	} else if (vitorias <= 90) {
+	} else if (vitorias <= 90 && derrotas <= vitorias) {
 		nivel = "Diamante";
-	} else if (vitorias <= 100) {
+	} else if (vitorias <= 100 && derrotas <= vitorias) {
 		nivel = "Lendário";
 	} else {
 		nivel = "Imortal";
